@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملفي الشخصي - بنك الدم الخيري</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🩸 <span>بنك الدم</span> الخيري</div>
+            <ul class="nav-links">
+                <li><a href="profile.html" class="active">ملفي</a></li>
+                <li><a href="donors.html">المتبرعون</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="#" id="logout-btn" style="color:#ffcccc;">🚪 تسجيل خروج</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="max-width:550px; margin-top:40px;">
+        <div class="card">
+            <h2 style="color:#8B0000; text-align:center;">👤 بياناتي الشخصية</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label>الاسم</label>
+                    <input type="text" id="prof-name" required>
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني (غير قابل للتغيير)</label>
+                    <input type="email" id="prof-email" disabled>
+                </div>
+                <div class="form-group">
+                    <label>رقم الجوال</label>
+                    <input type="tel" id="prof-phone" required>
+                </div>
+                <div class="form-group">
+                    <label>فصيلة الدم</label>
+                    <select id="prof-blood" required>
+                        <option>A+</option><option>A-</option>
+                        <option>B+</option><option>B-</option>
+                        <option>AB+</option><option>AB-</option>
+                        <option>O+</option><option>O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>العنوان</label>
+                    <input type="text" id="prof-address" required>
+                </div>
+                <div class="form-group" style="display:flex; align-items:center; gap:10px;">
+                    <label style="margin:0;">متاح للتبرع الآن</label>
+                    <input type="checkbox" id="prof-available" style="width:20px; height:20px;">
+                </div>
+                <button type="submit" class="btn" style="width:100%;">تحديث البيانات</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container"><p>© 2026 بنك الدم الخيري</p></div>
+    </footer>
+</body>
+</html>

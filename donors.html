@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتبرعون - بنك الدم الخيري</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🩸 <span>بنك الدم</span> الخيري</div>
+            <ul class="nav-links">
+                <li><a href="profile.html">ملفي</a></li>
+                <li><a href="donors.html" class="active">المتبرعون</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="#" id="logout-btn" style="color:#ffcccc;">🚪 تسجيل خروج</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:30px;">
+        <div class="card">
+            <h2 style="color:#8B0000;">🩸 قائمة المتبرعين المتاحين</h2>
+            <p>هؤلاء الأشخاص مستعدون للتبرع بالدم الآن.</p>
+            <div id="donors-list" class="donor-grid"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container"><p>© 2026 بنك الدم الخيري</p></div>
+    </footer>
+</body>
+</html>
